@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qalb Spices — Whole Spices with Heart</title>
+<meta name="description" content="Qalb Spices: whole turmeric, dry red chillies, black pepper, cardamom and cloves — chosen with care, packed fresh and delivered to your kitchen.">
+<meta property="og:title" content="Qalb Spices — Whole Spices with Heart">
+<meta property="og:description" content="Whole turmeric, dry red chillies, black pepper, cardamom and cloves — chosen with care and packed fresh.">
+<meta property="og:image" content="images/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<noscript><style>.reveal{opacity:1 !important;transform:none !important;filter:none !important;}</style></noscript>
+</head>
+<body>
+
+<!-- ============ spice illustrations (SVG sprite) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <radialGradient id="gPep" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#6b5a50"/><stop offset=".45" stop-color="#2d211b"/><stop offset="1" stop-color="#0f0907"/></radialGradient>
+    <linearGradient id="gCard" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B9CE6E"/><stop offset="1" stop-color="#5E7D26"/></linearGradient>
+    <linearGradient id="gClove" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a2a18"/><stop offset=".5" stop-color="#8d5733"/><stop offset="1" stop-color="#3b2013"/></linearGradient>
+    <linearGradient id="gTur" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DDA044"/><stop offset="1" stop-color="#97591A"/></linearGradient>
+    <radialGradient id="gTurCut" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#FFC63C"/><stop offset="1" stop-color="#EF8A00"/></radialGradient>
+    <linearGradient id="gChi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EE4C2B"/><stop offset=".6" stop-color="#C0161B"/><stop offset="1" stop-color="#7E0A10"/></linearGradient>
+    <radialGradient id="gMound" cx=".4" cy=".25" r=".9"><stop offset="0" stop-color="#F26C2C"/><stop offset=".6" stop-color="#D2341A"/><stop offset="1" stop-color="#9E1810"/></radialGradient>
+    <linearGradient id="gBowl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C26A3F"/><stop offset="1" stop-color="#7A3519"/></linearGradient>
+
+    <g id="pc"><circle r="20" fill="url(#gPep)"/><path d="M-12-8c4-4 9-3 12 1M-4 10c5 3 11 1 14-4M6-14c3 2 6 6 5 11M-14 4c2 4 5 6 9 7" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="1.4" stroke-linecap="round"/><path d="M-9-10c3-3 8-5 12-4" stroke="rgba(255,255,255,.35)" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+
+    <g id="cp"><path d="M0-34C16-24 20 8 0 36-20 8-16-24 0-34Z" fill="url(#gCard)"/><path d="M0-34C7-14 7 14 0 36M0-34C-7-14-7 14 0 36M0-34C13-14 13 14 0 36" fill="none" stroke="rgba(60,85,20,.55)" stroke-width="1.2"/><path d="M-6-14c-2 8-2 18 1 26" stroke="rgba(255,255,255,.4)" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M0-34v-5" stroke="#6b8a2d" stroke-width="3" stroke-linecap="round"/></g>
+
+    <g id="cl"><path d="M-3 8L3 8 1.6 56-1.6 56Z" fill="url(#gClove)"/><circle cy="2" r="9" fill="url(#gClove)"/><circle cx="-8" cy="-3" r="4.5" fill="#6a3f24"/><circle cx="8" cy="-3" r="4.5" fill="#6a3f24"/><circle cy="-9" r="4.5" fill="#7a4a2b"/><circle cy="2" r="3.5" fill="#2e180d"/></g>
+
+    <g id="tf"><path d="M-12-34C-30-28-30 10-22 34-17 50 0 54 8 48 26 40 28 8 20-22 16-38 0-40-12-34Z" fill="url(#gTur)"/><path d="M-24-6c8 3 16 3 26-1M-23 12c8 3 17 3 27-1M-20 28c7 3 14 3 22 0M-19-20c7 3 16 3 26 0" fill="none" stroke="rgba(70,35,8,.35)" stroke-width="1.6" stroke-linecap="round"/><path d="M-14-30c-4 10-4 30-1 44" stroke="rgba(255,255,255,.28)" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+    <g id="tc"><ellipse rx="30" ry="22" fill="#B26B1A"/><ellipse rx="26" ry="18" fill="url(#gTurCut)"/><ellipse rx="14" ry="9" fill="none" stroke="rgba(190,90,0,.45)" stroke-width="1.6"/></g>
+
+    <g id="ch"><path d="M0 0C34 8 52 54 34 104 30 116 20 110 22 98 30 62 14 34-10 20-16 10-8 2 0 0Z" fill="url(#gChi)"/><path d="M6 10C30 20 42 52 32 90" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-linecap="round"/><path d="M-6 6C-14-6-6-16 4-14 12-12 14-4 8 2Z" fill="#5A7A2A"/><path d="M-2-10C-6-20-2-28 6-30" stroke="#3E5A1A" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+  </defs>
+
+  <symbol id="ill-pepper" viewBox="0 0 200 200">
+    <use href="#pc" transform="translate(100 54) scale(1)"/>
+    <use href="#pc" transform="translate(48 100) scale(.95) rotate(120)"/>
+    <use href="#pc" transform="translate(152 98) scale(.95) rotate(-110)"/>
+    <use href="#pc" transform="translate(84 84) scale(1.1) rotate(80)"/>
+    <use href="#pc" transform="translate(120 82) scale(1.15) rotate(-70)"/>
+    <use href="#pc" transform="translate(66 134) scale(1.15) rotate(40)"/>
+    <use href="#pc" transform="translate(136 136) scale(1.2) rotate(-30)"/>
+    <use href="#pc" transform="translate(100 118) scale(1.25)"/>
+    <use href="#pc" transform="translate(100 158) scale(.9) rotate(60)"/>
+  </symbol>
+  <symbol id="ill-cardamom" viewBox="0 0 200 200">
+    <use href="#cp" transform="translate(72 108) rotate(-38) scale(1.15)"/>
+    <use href="#cp" transform="translate(126 100) rotate(28) scale(1.25)"/>
+    <use href="#cp" transform="translate(98 140) rotate(82) scale(1.05)"/>
+  </symbol>
+  <symbol id="ill-clove" viewBox="0 0 200 200">
+    <use href="#cl" transform="translate(52 100) rotate(-58) scale(1.1)"/>
+    <use href="#cl" transform="translate(148 100) rotate(58) scale(1.1)"/>
+    <use href="#cl" transform="translate(66 66) rotate(-30) scale(1.15)"/>
+    <use href="#cl" transform="translate(134 66) rotate(30) scale(1.15)"/>
+    <use href="#cl" transform="translate(100 50) rotate(0) scale(1.25)"/>
+  </symbol>
+  <symbol id="ill-turmeric" viewBox="0 0 200 200">
+    <use href="#tf" transform="translate(70 92) rotate(-32) scale(.85)"/>
+    <use href="#tf" transform="translate(130 96) rotate(34) scale(.8)"/>
+    <use href="#tf" transform="translate(100 82) rotate(4) scale(.7)"/>
+    <use href="#tc" transform="translate(100 152) scale(.95)"/>
+  </symbol>
+  <symbol id="ill-chilli" viewBox="0 0 200 200">
+    <use href="#ch" transform="translate(52 52) rotate(14) scale(.82)"/>
+    <use href="#ch" transform="translate(142 56) rotate(-18) scale(.8) translate(-30 0)"/>
+    <use href="#ch" transform="translate(96 48) rotate(-2) scale(.9)"/>
+  </symbol>
+  <symbol id="ill-powder" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="172" rx="64" ry="9" fill="rgba(60,30,10,.18)"/>
+    <path d="M28 112H172C172 150 142 174 100 174S28 150 28 112Z" fill="url(#gBowl)"/>
+    <ellipse cx="100" cy="112" rx="72" ry="14" fill="#7B3A1E"/>
+    <path d="M34 112C54 70 82 44 100 40 118 44 146 70 166 112 150 124 50 124 34 112Z" fill="url(#gMound)"/>
+    <g fill="#FF9A5C" opacity=".55"><circle cx="86" cy="70" r="2"/><circle cx="112" cy="62" r="1.6"/><circle cx="98" cy="88" r="2.2"/><circle cx="126" cy="90" r="1.8"/><circle cx="72" cy="96" r="1.8"/><circle cx="140" cy="106" r="1.6"/><circle cx="108" cy="104" r="1.8"/></g>
+    <path d="M70 100C80 78 94 62 104 56" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<div id="progress" aria-hidden="true"></div>
+<div class="announce" id="announce"></div>
+
+<header class="site-nav" id="top">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Qalb Spices — home">
+      <img src="images/logo.png" alt="" class="brand-logo" width="82" height="92">
+      <span class="brand-text" data-brand-name>Qalb Spices</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#why">Why Whole</a>
+      <a href="#story">Our Story</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn small" href="#shop">Shop Now</a>
+      <button class="cart-btn" type="button" data-open-cart aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="cart-count" aria-hidden="true">0</span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="ar">قلب</span> Whole spices · packed with care</div>
+      <h1>Spices with <span class="accent">heart.</span></h1>
+      <p class="hero-sub">Whole turmeric, dry red chillies, black pepper, cardamom and cloves — chosen with care and packed to keep every bit of aroma, so your kitchen tastes the way it should.</p>
+      <div class="hero-cta">
+        <a class="btn big" href="#shop">Shop the Spices</a>
+        <a class="btn big ghost" href="#story">Our Story</a>
+      </div>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg>Whole, not ground down</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></svg>Packed fresh in small batches</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.6"/><circle cx="17" cy="17.5" r="1.6"/></svg><span data-ship-text>Free shipping</span></li>
+      </ul>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="disc"></div>
+      <img class="hero-logo" src="images/logo.png" alt="" width="391" height="440">
+      <svg class="orb o1"><use href="#ill-turmeric"/></svg>
+      <svg class="orb o2"><use href="#ill-chilli"/></svg>
+      <svg class="orb o3"><use href="#ill-pepper"/></svg>
+      <svg class="orb o4"><use href="#ill-cardamom"/></svg>
+      <svg class="orb o5"><use href="#ill-clove"/></svg>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- ============ SHOP ============ -->
+<section id="shop" class="pad">
+  <div class="wrap">
+    <div class="eyebrow reveal">The Qalb Pantry</div>
+    <h2 class="reveal">Choose your spices</h2>
+    <p class="lede reveal">Pick a pack size, add it to your cart and check out in a minute. Every spice is sorted and packed fresh.</p>
+    <div class="pgrid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHY WHOLE ============ -->
+<section id="why" class="pad tinted">
+  <div class="wrap">
+    <div class="eyebrow reveal">Why Whole</div>
+    <h2 class="reveal">Whole spices keep their heart</h2>
+    <p class="lede reveal">A whole turmeric finger, a dry chilli, a peppercorn — each one holds its aroma and colour inside until the moment you use it.</p>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.2 6 10.5a6 6 0 0 1-12 0C6 9.2 12 3 12 3z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+        <h3>Aroma stays sealed</h3>
+        <p>The flavourful oils live inside the spice. Left whole, they stay put; ground powders lose them far faster.</p>
+      </div>
+      <div class="why-card reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>
+        <h3>Nothing to hide</h3>
+        <p>You can see exactly what you are buying — a real peppercorn, a real turmeric finger, a real chilli.</p>
+      </div>
+      <div class="why-card reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14M8 20c0-5 2-8 4-11 2 3 4 6 4 11"/><path d="M12 9V4"/></svg>
+        <h3>Fresh when you grind</h3>
+        <p>Crush, grate or grind just before cooking for brighter colour, sharper flavour and a better pot of food.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section id="story" class="pad">
+  <div class="wrap story-grid">
+    <div class="story-mark reveal">
+      <div class="ar-big" lang="ar" dir="rtl">قلب</div>
+      <div class="ar-cap"><b>Qalb</b> — the heart</div>
+    </div>
+    <div>
+      <div class="eyebrow reveal">Our Story</div>
+      <h2 class="reveal">Named for the heart of the kitchen</h2>
+      <p class="scrub">In Arabic and Urdu, <em>qalb</em> means heart. It is where good cooking starts — with care, patience and the right ingredients. We began Qalb Spices to bring that care to everyday cooking: whole spices, chosen well, packed fresh and sent to your door.</p>
+      <p class="scrub">From the first pinch of pepper in a tadka to a slow-cooked masala that fills the house, spices are what turn a meal into a memory. We want yours to carry a little heart.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT REACHES YOU ============ -->
+<section class="pad tinted" id="how">
+  <div class="wrap">
+    <div class="eyebrow reveal">From Us to Your Kitchen</div>
+    <h2 class="reveal">Three simple steps</h2>
+    <ol class="steps">
+      <li class="reveal"><span class="num">01</span><h3>Chosen with care</h3><p>We pick spices for aroma, colour and quality — whole, not ground down.</p></li>
+      <li class="reveal"><span class="num">02</span><h3>Cleaned &amp; sorted</h3><p>Each batch is cleaned and sorted so you get spice, not stalks and dust.</p></li>
+      <li class="reveal"><span class="num">03</span><h3>Packed fresh</h3><p>Packed in small batches in the size you choose, ready to send to you.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="pad">
+  <div class="wrap narrow">
+    <div class="eyebrow reveal">Good to Know</div>
+    <h2 class="reveal">Questions, answered</h2>
+    <div class="faq reveal">
+      <details>
+        <summary>How do I use whole turmeric?</summary>
+        <p>Dried turmeric fingers are hard, so crush them in a mortar or grind them in a strong spice grinder. Start with a little — freshly ground turmeric is bright and potent.</p>
+      </details>
+      <details>
+        <summary>How should I store dry red chillies?</summary>
+        <p>Keep them in an airtight container in a cool, dry, dark place. Kept dry, whole chillies stay good for a long time.</p>
+      </details>
+      <details>
+        <summary>How do I keep whole spices fresh?</summary>
+        <p>Store them airtight, away from heat, light and moisture, and grind only what you need so the aroma stays at its best.</p>
+      </details>
+      <details>
+        <summary>What pack sizes are available?</summary>
+        <p>Each spice comes in several pack sizes. Choose the weight you want on the product card before adding it to your cart.</p>
+      </details>
+      <details>
+        <summary>How much is shipping?</summary>
+        <p data-ship-faq>Shipping is calculated at checkout.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band">
+  <div class="cta-dots" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 class="reveal">Bring a little heart into your kitchen</h2>
+    <p class="reveal">Whole turmeric, dry red chillies, black pepper, cardamom and cloves — packed fresh and ready to ship.</p>
+    <div class="reveal"><a class="btn big light" href="#shop">Shop Qalb Spices</a></div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="#top"><img src="images/logo.png" alt="" class="brand-logo" width="82" height="92"><span class="brand-text" data-brand-name>Qalb Spices</span></a>
+      <p>Whole spices with heart — chosen with care, packed fresh.</p>
+    </div>
+    <div class="foot-col">
+      <span>Explore</span>
+      <a href="#shop">Shop</a>
+      <a href="#why">Why Whole</a>
+      <a href="#story">Our Story</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="foot-col" id="footContact" hidden>
+      <span>Contact</span>
+    </div>
+  </div>
+  <div class="wrap foot-legal">© <span id="year">2026</span> Qalb Spices. All rights reserved.</div>
+</footer>
+
+<script src="site-config.js"></script>
+<script src="shop.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
